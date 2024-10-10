@@ -21,16 +21,14 @@ function ScheduleTime(){
     const time = document.querySelector(".time").value
     const messageInput = document.querySelector(".messageInputs").value
     let message = `
-   Olá, tudo bem?
-    Gostaria de agendar um horário para cortar o cabelo na R.W.J Barbearia, 
-    se possível para o dia ${data},no horário ${time}. 
-    Tem algum horário disponível?
+Olá, tudo bem?
+Gostaria de agendar um horário para cortar o cabelo na R.W.J Barbearia, 
+se possível para o dia ${data},no horário ${time}. 
+Tem algum horário disponível?
 
-Aguardo sua resposta. Obrigado!
-
+Aguardo sua resposta.Obrigado!
 Atenciosamente,
 ${name}.
-
     `
     //Codifica a mensagem para ser usada na URL
     const encodeMessage = encodeURIComponent(message);
