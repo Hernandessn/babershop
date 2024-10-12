@@ -363,6 +363,8 @@ i {
   }
 }
 .formulario-fale-conosco {
+  width: 30vw;
+  height: 50vh;
   background-color: #161617;
   display: flex;
   flex-direction: column;
@@ -375,13 +377,31 @@ i {
   transition: left 1s ease-in-out;
   z-index: 99;
 }
-.formulario-fale-conosco button {
+.formulario-fale-conosco .btn-scheduler {
   color: #FFF;
   background-color: #d94140;
-  padding: 4px 8px;
+  padding: 15px 8px;
   border-radius: 4px;
   border: 0;
   cursor: pointer;
+}
+.formulario-fale-conosco .btn-calendar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  color: #232224;
+  background-color: #FFF;
+  padding: 0px 8px;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  font-weight: 1000;
+  font-size: 14px;
+}
+.formulario-fale-conosco img {
+  width: 20%;
 }
 
 input {
@@ -392,13 +412,41 @@ input {
   outline-color: #d94140;
 }
 
-textarea {
-  width: 270px;
-  height: 100px;
+#calendar {
+  max-width: 700px;
+  position: fixed;
+  padding: 20px;
   border-radius: 5px;
-  border: 1px solid gray;
-  padding-left: 5px;
-  outline-color: #d94140;
+  background-color: #FFF;
+  top: 30%;
+  left: -410px;
+  transition: left 1s ease-in-out;
+  z-index: 999;
+}
+
+.dateCalendar {
+  color: #FFF;
+}
+
+.btn-calendar button {
+  width: 100%;
+  color: #232224;
+  background-color: #FFF;
+  padding: 15px 8px;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+}
+
+.mascara-calender {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+  transition: visibility 1s ease-in-out;
+  z-index: 990;
 }
 
 .mascara-formulario {

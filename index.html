@@ -7,10 +7,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-   
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js'></script>   
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <title>RWJ-Barbearia</title>
+    <title>Barbearia</title>
 </head>
 <body>
    <!--HEADER-->
@@ -19,21 +19,21 @@
 
         <nav class="header-content container">
         <div class="header-icons" data-aos="fade-down">
-            <a href="https://www.instagram.com/reinaldo.r.w.j.barbearia/profilecard/?igsh=MWp6b3Jhc3h2dDcyNA=="
+            <a href="#"
              target="_blank">
                <i class="fa-brands fa-instagram fa-2x"></i>
             </a>
-            <a href="https://www.facebook.com/reinaldo.alves.3557/" target="_blank">
+            <a href="#" target="_blank">
                 <i class="fa-brands fa-facebook fa-2x"></i>
              </a>
-             <a href="https://wa.me/5586995114003"
+             <a href="https://wa.me/5586994906155"
               target="_blank">
                 <i class="fa-brands fa-whatsapp fa-2x"></i>
              </a>
        </div>
            <div class="header-logo" data-aos="fade-up" data-aos-delay="300">
             <img data-aos="flip-up"
-             data-aos-delay="300" data-aos-duration="1500" src="./img/logo-baber1.png" alt="logo da barbearia">
+             data-aos-delay="300" data-aos-duration="1500" src="./img/logo-baber2.png" alt="logo da barbearia">
            </div>
        
         <div data-aos="fade-down"> 
@@ -57,16 +57,15 @@
         <div class="container about-content">
            <div data-aos="zoom-in" data-aos-delay="100">
             <img 
-             src="./img/img-about1.png"
+             src="./img/img-about.png"
              alt="imagem sobre a barbearia">
            </div>
            <div  class="about-description"
            data-aos="zoom-out-left" data-aos-delay="250">
             <h2>Sobre</h2>
-            <p>Na R.W.J Barbearia, oferecemos uma experiência única de cuidado e estilo desde 2001.
-                 Unindo tradição e tendências modernas, nossos profissionais garantem um atendimento personalizado, 
-                 sempre priorizando o bem-estar e a satisfação dos nossos clientes.
-                 Venha nos visitar e sinta a diferença!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum vitae eaque ullam, saepe, 
+                incidunt tenetur optio laboriosam facilis placeat odio repellat
+                 id? Accusamus architecto pariatur, in laudantium dignissimos modi voluptatibus?</p>
             <p>Horário de funcionamento: <strong>09:00</strong> <strong>ás</strong> <strong>19:00</strong></p>
         </div>
         </div>
@@ -121,24 +120,24 @@
     <h2>Endereço:</h2>
     <p>Avenida santo Antônio .n578, Campo Maior, Piaui, Brasil.</p>
       <p>Horário de funcionamento: 9:00 ás 19:00</p>
-      <p>Telefone:(86)9955114003</p>
+      <p>Telefone:(86)</p>
    </div>
     <div class="logo-footer">
-        <img src="./img/logo-baber1.png" alt="Logo barbearia">  
+        <img src="./img/logo-baber2.png" alt="Logo barbearia">  
         <p>Copyright 2023 | RWJ-Babearia - Todos os direitos reservados.</p>
     </div>
    <div class="footer-icno">
     <h2>Redes Socias:</h2>
     <br>
     <div class="icons-footer">
-    <a href="https://www.instagram.com/reinaldo.r.w.j.barbearia/profilecard/?igsh=MWp6b3Jhc3h2dDcyNA==" 
+    <a href="#" 
     target="_blank">
         <i class="fa-brands fa-instagram fa-2x"></i>
      </a>
-     <a href="https://www.facebook.com/reinaldo.alves.3557/" target="_blank">
+     <a href="#" target="_blank">
          <i class="fa-brands fa-facebook fa-2x"></i>
       </a>
-      <a href="https://wa.me/5586995114003"
+      <a href="https://wa.me/5586994906155"
        target="_blank">
          <i class="fa-brands fa-whatsapp fa-2x"></i>
       </a>
@@ -149,21 +148,26 @@
 <a
  class="btn-whatsapp" 
  target="_blank"
-  href="https://wa.me/5586995114003"
+  href="https://wa.me/5586994906155"
   data-aos="zoom-in-up" data-aos-delay="450">
     <img src="./img/logo-whatsapp.png" alt="whatsapp">
 
 </a>
 <!---Agendamento-->
 
-<form class="formulario-fale-conosco">
+   <div id="calendar"></div>
+
+<div onclick="HideCalendar()" class="mascara-calender"></div>
+<div class="formulario-fale-conosco">
         
         <input class="name" placeholder="Seu nome" type="text">
-        <input class="data" placeholder="Digite a data desejada" type="text">
+        <button onclick="ClickBtnCalendar()" 
+        class="btn-calendar">  <img class="logo-calendar" src="./img/logo-calendario.jpg">
+        Calendario</button>
+        <p class="dateCalendar"></p>
         <input  class="time" placeholder="Digite o horário desejado" type="tel" >
-        <textarea class="messageInputs" placeholder="Digite uma mensagem..." ></textarea>
-        <button type="submit" onclick="ScheduleTime()">Agendar</button>
-    </form>
+        <button type="submit" class="btn-scheduler" onclick="ScheduleTime()">Agendar</button>
+</div>
 
     <div onclick=" esconderform()" class="mascara-formulario"></div> 
 
