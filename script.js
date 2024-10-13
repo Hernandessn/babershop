@@ -11,7 +11,7 @@ function CliqueiNoBotao(){
     mascara.style.visibility = "visible"
 }
 function esconderform(){
-    form.style.left = "-300px"
+    form.style.left = "-410px"
     form.style.transform = "translatex(0%)"
     mascara.style.visibility = "hidden"
 
