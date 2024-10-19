@@ -31,5 +31,5 @@ A Barbearia XYZ oferece um ambiente acolhedor e serviços de alta qualidade para
 - **Informações de Contato**: Fácil acesso às informações de contato e localização da barbearia. 📍
 
 
-##Visualização
+## Visualização
 Veja o site aqui https://barbearia-h.netlify.app/
