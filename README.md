@@ -29,3 +29,7 @@ A Barbearia XYZ oferece um ambiente acolhedor e serviços de alta qualidade para
 - **Lista de Serviços**: Apresenta todos os serviços oferecidos, com descrições e preços. 💇‍♂️
 - **Design Responsivo**: O site é otimizado para dispositivos móveis e desktops, garantindo uma boa experiência de usuário em qualquer tela. 📱💻
 - **Informações de Contato**: Fácil acesso às informações de contato e localização da barbearia. 📍
+
+
+##Visualização
+Veja o site aqui https://barbearia-h.netlify.app/
