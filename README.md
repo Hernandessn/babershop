@@ -3,7 +3,7 @@
 
 # ✂️ Site de Barbearia 
 
-Bem-vindo ao repositório da Barbearia XYZ! Este é um site moderno e responsivo para agendamentos e informações sobre nossos serviços.
+Bem-vindo ao repositório da Barbearia ! Este é um site moderno e responsivo para agendamentos e informações sobre nossos serviços.
 
 ## 📚 Sumário
 
@@ -13,7 +13,7 @@ Bem-vindo ao repositório da Barbearia XYZ! Este é um site moderno e responsivo
 
 ## 🏠 Sobre
 
-A Barbearia XYZ oferece um ambiente acolhedor e serviços de alta qualidade para todos os nossos clientes. Este site permite que os usuários agendem horários e conheçam mais sobre os serviços oferecidos.
+A Barbearia oferece um ambiente acolhedor e serviços de alta qualidade para todos os nossos clientes. Este site permite que os usuários agendem horários e conheçam mais sobre os serviços oferecidos.
 
 ## 🛠️ Tecnologias Utilizadas
 
