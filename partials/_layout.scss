@@ -356,7 +356,7 @@ z-index: 99;
         align-items: center;
         justify-content: center;
         gap: 20px;
-        width: 30%;
+        width: 25%;
         color: #232224;
         background-color: #FFF;
         padding: 1px 10px;
@@ -377,7 +377,11 @@ input{
     padding-left: 5px;
     outline-color:  $red-normal;
 }
- 
+ .div-calendar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+ }
 #calendar{
     max-width: 700px;
      position: fixed;

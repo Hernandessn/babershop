@@ -390,7 +390,7 @@ i {
   align-items: center;
   justify-content: center;
   gap: 20px;
-  width: 30%;
+  width: 25%;
   color: #232224;
   background-color: #FFF;
   padding: 1px 10px;
@@ -410,6 +410,12 @@ input {
   border: 1px solid gray;
   padding-left: 5px;
   outline-color: #d94140;
+}
+
+.div-calendar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 #calendar {
