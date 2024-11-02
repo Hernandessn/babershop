@@ -31,7 +31,7 @@ function ClickBtnCalendar(){
   
 }
 function HideCalendar(){
-    calendarEl.style.left = "-420px"
+    calendarEl.style.left = "-470px"
     calendarEl.style.transform = "translatex(0%)"
     mascaraCalendar.style.visibility = "hidden"
 
