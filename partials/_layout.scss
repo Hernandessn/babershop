@@ -14,7 +14,7 @@
     content: ' ';
     display: block;
     position: absolute;
-    background-image: linear-gradient(to bottom,rgba(6,18,30,0.1),#06121e),url("../img/fundo-home.jfif");
+    background-image: linear-gradient(to bottom,rgba(6,18,30,0.1),#06121e),url("../img/fundo-home1.jpg");
     left: 0;
     top: 0;
     width: 100%;
@@ -330,7 +330,7 @@ z-index: 99;
 
 .formulario-fale-conosco{
   width: 30vw;
-    height: 50vh;
+    height: 55vh;
     background-color: #161617;
     display: flex;
     flex-direction: column;
@@ -342,7 +342,15 @@ z-index: 99;
     left: -410px;
     transition: left 1s ease-in-out;
     z-index: 99;
-
+    p{
+        color: $white-normal;
+    }
+    h4{
+        color: $white-normal;
+        display: flex;
+        align-items: center;
+       justify-content: center;
+    }
    .btn-scheduler{
         color: $white-normal;
         background-color: $red-normal;
@@ -350,13 +358,15 @@ z-index: 99;
         border-radius: 4px;
         border: 0;
         cursor: pointer;
+         font-weight: 1000;
+        font-size: 14px;
     }
     .btn-calendar {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 20px;
-        width: 25%;
+        width: 20%;
         color: #232224;
         background-color: #FFF;
         padding: 1px 10px;
@@ -429,8 +439,7 @@ input{
 
 @media (max-width:700px){
     .formulario-fale-conosco{
-        width: 70%;
-   
+    width: 70%;
     background-color: #161617;
     display: flex;
     flex-direction: column;
@@ -442,5 +451,21 @@ input{
     left: -310px;
     transition: left 1s ease-in-out;
     z-index: 99;
+
+    .btn-calendar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 35%;
+    color: #232224;
+    background-color: #FFF;
+    padding: 1px 10px;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    font-weight: 1000;
+    font-size: 14px;
+    }
     }
 }
