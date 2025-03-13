@@ -1,4 +1,9 @@
-<img src="https://cdn.discordapp.com/attachments/1225612992201363552/1296638643166904330/baber-banner1.PNG?ex=67130456&is=6711b2d6&hm=307c7c6bc7d65ea01bcfb19ea148d6e159ea4843d4b3060c6a5a98e0059525bd&"/>
+# Screenshot
+
+<img src="https://github.com/Hernandessn/babershop/blob/main/screenshot/screenshot-1.png?raw=true"/>
+<img src="https://github.com/Hernandessn/babershop/blob/main/screenshot/screenshot-2.png?raw=true"/>
+<img src="https://github.com/Hernandessn/babershop/blob/main/screenshot/screenshot-3.png?raw=true"/>
+<img src="https://github.com/Hernandessn/babershop/blob/main/screenshot/screenshot-4.png?raw=true"/>
 
 
 # ✂️ Site de Barbearia 
