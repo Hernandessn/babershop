@@ -1,444 +1,441 @@
-.container{
-    max-width: 1340px;
-    margin: 0 auto;
-    padding: 0 8px;
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 8px;
 }
 
 //BG HOME
 
-.bg-home{
-    position: relative;
+.bg-home {
+  position: relative;
 }
 
-.bg-home:before{
-    content: ' ';
-    display: block;
-    position: absolute;
-    background-image: linear-gradient(to bottom,rgba(6,18,30,0.1),#06121e),url("../img/fundo-home1.jpg");
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    opacity: 0.9;
+.bg-home:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  background-image:
+    linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e),
+    url("./img/fundo-home1.jpg");
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  opacity: 0.9;
 }
 
 //------------------
 
 //HERO ---------
 
-.hero{
-    color: $white-normal;
-    min-height: 80vh;
+.hero {
+  color: $white-normal;
+  min-height: 80vh;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
 
-    h1{
-        text-align: center;
-        line-height: 150%;
-        max-width: 940px;
-        font-size: 46px;
-
-    }
-    p{
-        text-align: center;
-        margin: 14px 0;
-
-    }
-
-}
-
-.button-contact{
-    padding: 14px 28px;
-    color: $white-normal;
-    background-color: $red-normal;
-    border: 0;
-    font-size: 18px;
-    font-weight: 600;
+  h1 {
+    text-align: center;
+    line-height: 150%;
+    max-width: 940px;
+    font-size: 46px;
+  }
+  p {
+    text-align: center;
     margin: 14px 0;
-
-}
-.button-contact:hover{
-    animation: scaleButton 0.8s alternate infinite;
+  }
 }
 
-@keyframes scaleButton{
-    from{
-      transform: scale(1);
-    }
-    to{
-        transform: scale(1.07);
-    }
+.button-contact {
+  padding: 14px 28px;
+  color: $white-normal;
+  background-color: $red-normal;
+  border: 0;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 14px 0;
+}
+.button-contact:hover {
+  animation: scaleButton 0.8s alternate infinite;
 }
 
-@media (max-width: 768px){
-    .hero{
-        min-height: 60vh;
+@keyframes scaleButton {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.07);
+  }
+}
 
-        h1{
-            font-size: 31px;
-            padding: 0 14px;
-            width: 100%;
-        }
-        p{
-            font-size: 14px;
-        }
+@media (max-width: 768px) {
+  .hero {
+    min-height: 60vh;
 
+    h1 {
+      font-size: 31px;
+      padding: 0 14px;
+      width: 100%;
     }
+    p {
+      font-size: 14px;
+    }
+  }
 }
 @media screen and (max-width: 400px) {
-    .hero h1{
-        font-size: 24px;
-    }
-   
+  .hero h1 {
+    font-size: 24px;
+  }
 }
 
 //-------------
 
 //About --------
 
-.about{
-    background-color: $primary-normal;
-    overflow: hidden;
-    color: $white-normal;
+.about {
+  background-color: $primary-normal;
+  overflow: hidden;
+  color: $white-normal;
 }
 
-.about-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-    padding: 34px 14px 64px 14px;
-    img{
-        max-width: 570px;
-    }
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 34px 14px 64px 14px;
+  img {
+    max-width: 570px;
+  }
 }
 
-.about-content div{
-   flex: 1;
+.about-content div {
+  flex: 1;
 }
 
-.about-description{
-    h2{
-        font-size: 38px;
-        margin-bottom: 24px;
-    }
-    p{
-        margin-bottom: 14px;
-        line-height: 150%;
-    }
+.about-description {
+  h2 {
+    font-size: 38px;
+    margin-bottom: 24px;
+  }
+  p {
+    margin-bottom: 14px;
+    line-height: 150%;
+  }
 }
 
-@media (max-width:768px){
-    .about-content{
-        flex-direction: column;
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
 
-        img{
-            max-width: 370px;
-        }
+    img {
+      max-width: 370px;
     }
+  }
 }
 
 //--------------
 
 //SERVICES
 
-.services{
-    background-color: $white-normal;
-    color: $black-normal;
-    display: flex;
+.services {
+  background-color: $white-normal;
+  color: $black-normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 54px 14px;
+}
+
+.services-content {
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 14px;
+  }
+  p {
+    line-height: 150%;
+    margin-bottom: 14px;
+    text-align: center;
+    max-width: 780px;
+  }
+}
+.haircuts {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 0 44px 34px 44px;
+}
+.haircut {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: $white-normal;
+  border-radius: 8px;
+  box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.5);
+
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    max-width: 354px;
+    transition: transform(0.5s);
+  }
+}
+.haircut img:hover {
+  transform: scale(1.2);
+  z-index: 1;
+}
+.haircut-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px;
+  background-color: $white-normal;
+  z-index: 99;
+
+  button {
+    color: $white-normal;
+    background-color: $red-normal;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 0;
+    cursor: default;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .haircuts {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 54px 14px;
-}
-
-.services-content{
-    h2{
-        text-transform: uppercase;
-        text-align: center;
-        font-size: 38px;
-        margin-bottom: 14px;
-    }
-    p{
-        line-height: 150%;
-        margin-bottom: 14px;
-        text-align: center;
-        max-width: 780px;
-    }
-}
-.haircuts{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 16px;
-    padding: 0 44px 34px 44px;
-}
-.haircut{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    background-color: $white-normal;
-    border-radius: 8px;
-    box-shadow: 0px -1px 17px -4px rgba(0,0,0,0.5);
-
-    overflow:hidden;
-
-
-    img{
-        width: 100%;
-        max-width: 354px;
-        transition: transform(0.5s);
-    }
-}
-.haircut img:hover{
-    transform: scale(1.2);
-    z-index: 1;
-}
-.haircut-info{
-    display: flex;
-    justify-content: space-between;
-    padding: 14px;
-    background-color: $white-normal;
-    z-index: 99;
-
-
-    button{
-        color: $white-normal;
-        background-color: $red-normal;
-        padding: 4px 8px;
-        border-radius: 4px;
-        border: 0;
-        cursor: default;
-    }
-}
-
-@media screen and (max-width: 768px){
-    .haircuts{
-      flex-direction: column;
-    }
-    .haircut img{
-     max-width: 740px;
-    }
+  }
+  .haircut img {
+    max-width: 740px;
+  }
 }
 
 //------------
 
 //FOOTER
 
-.footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 54px 0;
-    gap: 24px;
-    color: $white-normal;
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 54px 0;
+  gap: 24px;
+  color: $white-normal;
 }
-.address{
-  max-width:500px;
-   
+.address {
+  max-width: 500px;
 }
-.logo-footer img{
-   width: 50%;
+.logo-footer img {
+  width: 50%;
 }
 .logo-footer p {
   margin-left: -25%;
 }
-.footer-icons{
-    display: flex;
-    gap: 8px;
-    color: $white-normal;
+.footer-icons {
+  display: flex;
+  gap: 8px;
+  color: $white-normal;
 }
-@media (max-width: 768px){
-    .footer{
-       flex-direction: column;
-       padding: 15px;
-    }
-    .logo-footer p {
-        margin-left: 15%;
-      }
-      .logo-footer img{
-        margin-left:70px;
-      }
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 15px;
+  }
+  .logo-footer p {
+    margin-left: 15%;
+  }
+  .logo-footer img {
+    margin-left: 70px;
+  }
 }
 //---------
 
 //Whatsapp button
 
-.btn-whatsapp{
-position: fixed;
-bottom: 14px;
-right: 24px;
-z-index: 99;
-    img{
-   max-width: 74px;
-  transition: transform 0.4s;
-    }
+.btn-whatsapp {
+  position: fixed;
+  bottom: 14px;
+  right: 24px;
+  z-index: 99;
+  img {
+    max-width: 74px;
+    transition: transform 0.4s;
+  }
 
-    img:hover{
-        transform: scale(1.1);
-    }
+  img:hover {
+    transform: scale(1.1);
+  }
 }
 
-.btn-whatsapp.tooltip-text{
-    visibility: hidden;
-    position: absolute;
-    width:120px;
-    top: 8px;
-    left: -100;
-    text-align: center;
-    background-color: $black-normal;
-    color: $white-normal;
-    opacity: 0;
-    transition: opacity 0.4s;
-
-
+.btn-whatsapp.tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  width: 120px;
+  top: 8px;
+  left: -100;
+  text-align: center;
+  background-color: $black-normal;
+  color: $white-normal;
+  opacity: 0;
+  transition: opacity 0.4s;
 }
-.btn-whatsapp img{
-        width: 200px;
+.btn-whatsapp img {
+  width: 200px;
+}
+.btn-whatsapp:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+.icons-footer {
+  display: flex;
+  gap: 12px;
+}
+@media (max-width: 768px) {
+  .btn-whatsapp {
+    img {
+      max-width: 64px;
     }
-.btn-whatsapp:hover .tooltip-text{
- visibility: visible;
- opacity: 1;
+  }
 }
-.icons-footer{
-    display: flex;
-    gap: 12px;
-}
-@media (max-width: 768px){
-    .btn-whatsapp{
-    img{
-        max-width: 64px;
-    }
-    }
-}
-
-
 
 //--------------------
 
-
 //FORM
 
-
-.formulario-fale-conosco{
+.formulario-fale-conosco {
   width: 30vw;
-    height: 55vh;
-    background-color: #161617;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    padding: 20px;
-    border-radius: 5px;
-    gap: 20px;
-    top: 30%;
-    left: -410px;
-    transition: left 1s ease-in-out;
-    z-index: 99;
-    p{
-        color: $white-normal;
-    }
-    h4{
-        color: $white-normal;
-        display: flex;
-        align-items: center;
-       justify-content: center;
-    }
-   .btn-scheduler{
-        color: $white-normal;
-        background-color: $red-normal;
-        padding: 15px 8px;
-        border-radius: 4px;
-        border: 0;
-        cursor: pointer;
-         font-weight: 1000;
-        font-size: 14px;
-    }
-    .btn-calendar {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        width: 20%;
-        color: #232224;
-        background-color: #FFF;
-        padding: 1px 10px;
-        border-radius: 4px;
-        border: 0;
-        cursor: pointer;
-        font-weight: 1000;
-        font-size: 14px;
-    }
-      img{
-        width: 70%;
-      } 
-}
-input{
-    height: 40px;
-    border-radius: 5px;
-    border: 1px solid gray;
-    padding-left: 5px;
-    outline-color:  $red-normal;
-}
- .div-calendar{
+  height: 55vh;
+  background-color: #161617;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  padding: 20px;
+  border-radius: 5px;
+  gap: 20px;
+  top: 30%;
+  left: -410px;
+  transition: left 1s ease-in-out;
+  z-index: 99;
+  p {
+    color: $white-normal;
+  }
+  h4 {
+    color: $white-normal;
     display: flex;
     align-items: center;
-    gap: 10px;
- }
-#calendar{
-    max-width: 700px;
-     position: fixed;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: $white-normal;
-    top:30%;
-    left: -470px;
-    transition: left 1s ease-in-out;
-    z-index: 999;
-}
-.dateCalendar{
+    justify-content: center;
+  }
+  .btn-scheduler {
     color: $white-normal;
-}
-.btn-calendar button{
-    width:100%;
-    color: $black-normal;
-    background-color: $white-normal;
+    background-color: $red-normal;
     padding: 15px 8px;
     border-radius: 4px;
     border: 0;
     cursor: pointer;
+    font-weight: 1000;
+    font-size: 14px;
+  }
+  .btn-calendar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 20%;
+    color: #232224;
+    background-color: #fff;
+    padding: 1px 10px;
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+    font-weight: 1000;
+    font-size: 14px;
+  }
+  img {
+    width: 70%;
+  }
 }
-.mascara-calender{
-    visibility: hidden;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
-    transition: visibility 1s ease-in-out;
-    z-index: 990;
+input {
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  padding-left: 5px;
+  outline-color: $red-normal;
 }
-.mascara-formulario{
-    visibility: hidden;
-  
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
-    transition: visibility 1s ease-in-out;
-    z-index: 1;
+.div-calendar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#calendar {
+  max-width: 700px;
+  position: fixed;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: $white-normal;
+  top: 30%;
+  left: -470px;
+  transition: left 1s ease-in-out;
+  z-index: 999;
+}
+.dateCalendar {
+  color: $white-normal;
+}
+.btn-calendar button {
+  width: 100%;
+  color: $black-normal;
+  background-color: $white-normal;
+  padding: 15px 8px;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+}
+.mascara-calender {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    109deg,
+    rgba(10, 12, 16, 0.99) 15%,
+    rgba(10, 12, 16, 0.7) 50%,
+    rgba(10, 12, 16, 0.99) 85%
+  );
+  transition: visibility 1s ease-in-out;
+  z-index: 990;
+}
+.mascara-formulario {
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    109deg,
+    rgba(10, 12, 16, 0.99) 15%,
+    rgba(10, 12, 16, 0.7) 50%,
+    rgba(10, 12, 16, 0.99) 85%
+  );
+  transition: visibility 1s ease-in-out;
+  z-index: 1;
 }
 
-@media (max-width:700px){
-    .formulario-fale-conosco{
+@media (max-width: 700px) {
+  .formulario-fale-conosco {
     width: 70%;
     background-color: #161617;
     display: flex;
@@ -453,19 +450,19 @@ input{
     z-index: 99;
 
     .btn-calendar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    width: 35%;
-    color: #232224;
-    background-color: #FFF;
-    padding: 1px 10px;
-    border-radius: 4px;
-    border: 0;
-    cursor: pointer;
-    font-weight: 1000;
-    font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      width: 35%;
+      color: #232224;
+      background-color: #fff;
+      padding: 1px 10px;
+      border-radius: 4px;
+      border: 0;
+      cursor: pointer;
+      font-weight: 1000;
+      font-size: 14px;
     }
-    }
+  }
 }
