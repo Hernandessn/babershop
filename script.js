@@ -5,12 +5,12 @@ AOS.init();
 const form = document.querySelector(".formulario-fale-conosco")
 const mascara = document.querySelector(".mascara-formulario")
 
-function CliqueiNoBotao(){
+function CliqueiNoBotao() {
     form.style.left = "50%"
     form.style.transform = "translatex(-50%)"
     mascara.style.visibility = "visible"
 }
-function esconderform(){
+function esconderform() {
     form.style.left = "-410px"
     form.style.transform = "translatex(0%)"
     mascara.style.visibility = "hidden"
@@ -22,15 +22,15 @@ function esconderform(){
 const buttonCalender = document.querySelector(".btn-calendar");
 const mascaraCalendar = document.querySelector(".mascara-calender");
 //Função para o calendario aparecer
-function ClickBtnCalendar(){
+function ClickBtnCalendar() {
     calendarEl.style.left = "50%"
     calendarEl.style.transform = "translatex(-50%)"
     mascaraCalendar.style.visibility = "visible"
 
 
-  
+
 }
-function HideCalendar(){
+function HideCalendar() {
     calendarEl.style.left = "-470px"
     calendarEl.style.transform = "translatex(0%)"
     mascaraCalendar.style.visibility = "hidden"
@@ -43,16 +43,16 @@ let selectedDate; // Variável global para armazenar a data selecionada
 
 
 
-document.addEventListener('DOMContentLoaded', function() { 
+document.addEventListener('DOMContentLoaded', function () {
     var calendarEl = document.getElementById('calendar');
     const date = document.querySelector(".dateCalendar")
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
         initialView: 'dayGridMonth',
-        dateClick: function(info) {
+        dateClick: function (info) {
             selectedDate = info.dateStr; // Armazenar a data selecionada
             date.innerHTML = formatDate(selectedDate); // Formata a data para exibir
-            
+
         }
     });
 
@@ -84,7 +84,7 @@ function ScheduleTime() {
     Atenciosamente,
     ${name}.
     `;
-    
+
     // Aqui você pode fazer o que quiser com a mensagem
     console.log(message); // Por exemplo, imprimir no console
 
@@ -92,8 +92,8 @@ function ScheduleTime() {
     const encodeMessage = encodeURIComponent(message);
 
     //Cria a URL do Whatasapp com a mensagem pré-preenchida
-    const whatasappURL = `https://wa.me/5586994906155?text=${encodeMessage}`
+    const whatasappURL = `https://wa.me/1111111111111?text=${encodeMessage}`
 
-    window.open(whatasappURL,'_blank');
+    window.open(whatasappURL, '_blank');
 
 };
